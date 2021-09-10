@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Linux学习路线 | OrangeYzi's Blog</title><meta name="description" content="互联网上的各种网络服务是架构在各种各样的服务器上的。服务器(Server)是提供网络服务的物理载体，是一种计算机，只不过它是一种功能更为强大的计算机，特别是在网络应用服务方面。在服务器中安装有操作系统，就如普通PC中安装有Windows 7，Windows 8或者Windows 10一样。服务器中运行的操作系统一般常被称为服务器操作系统，或者叫网络操作系统。网络操作系统管理着互联网中各种各样的服务"><meta name="author" content="OrangeYzi"><meta name="copyright" content="OrangeYzi"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://yoursite.com/2021/01/17/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="Linux学习路线"><meta property="og:url" content="http://yoursite.com/2021/01/17/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><meta property="og:site_name" content="OrangeYzi's Blog"><meta property="og:description" content="互联网上的各种网络服务是架构在各种各样的服务器上的。服务器(Server)是提供网络服务的物理载体，是一种计算机，只不过它是一种功能更为强大的计算机，特别是在网络应用服务方面。在服务器中安装有操作系统，就如普通PC中安装有Windows 7，Windows 8或者Windows 10一样。服务器中运行的操作系统一般常被称为服务器操作系统，或者叫网络操作系统。网络操作系统管理着互联网中各种各样的服务"><meta property="og:image" content="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg"><meta property="article:published_time" content="2021-01-17T09:10:28.000Z"><meta property="article:modified_time" content="2021-01-17T09:29:25.178Z"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime: '',
+  last_push_date: '天前',
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+      const now = new Date()
+      const expiryDay = ttl * 86400000
+      const item = {
+        value: value,
+        expiry: now.getTime() + expiryDay,
+      }
+      localStorage.setItem(key, JSON.stringify(item))
+    },
+  
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2021-01-17 17:29:25'
+}</script><noscript><style type="text/css">
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var autoChangeMode = 'false'
+var t = saveToLocal.get('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (saveToLocal.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><meta name="generator" content="Hexo 5.1.0"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">13</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">OrangeYzi's Blog</a></span><span class="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">Linux学习路线</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-17T09:10:28.000Z" title="发表于 2021-01-17 17:10:28">2021-01-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-17T09:29:25.178Z" title="更新于 2021-01-17 17:29:25">2021-01-17</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>互联网上的各种网络服务是架构在各种各样的服务器上的。服务器(Server)是提供网络服务的物理载体，是一种计算机，只不过它是一种功能更为强大的计算机，特别是在网络应用服务方面。在服务器中安装有操作系统，就如普通PC中安装有Windows 7，Windows 8或者Windows 10一样。服务器中运行的操作系统一般常被称为服务器操作系统，或者叫网络操作系统。网络操作系统管理着互联网中各种各样的服务：DHCP,FTP,Web,E-mail,DNS,流媒体,网络游戏等，没有网络操作系统，人们就无法享受到各种网络服务。目前主流的网络操作系统有Windows和Linux两种。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://img-blog.csdnimg.cn/20191017113010819.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RjdzE0Mjg1Nw==,size_16,color_FFFFFF,t_70" alt="Alt text" title="optional title"></p>
+<p>Linux操作系统在短短的几年之内得到了非常迅猛的发展，这与linux具有的良好特性是分不开的。Linux包含了UNIX的全部功能和特性。简单来说，linux具有以下主要特性：遵循GNU GPL，开放性，多任务，多用户，设备独立性，提供了丰富的网络功能，可靠的系统安全，良好的可移植性。</p>
+<ol>
+<li>掌握Linux基础</li>
+</ol>
+<p>俗话说“思则有备，有备无患”，学习之前你先要搭建好学习环境(红帽RHEL7)然后在虚拟机安装它，开始使用它。学习Linux，命令使用是学习的前提，就像你和外国人说话就得说英语不然别人怎么知道你说的是什么。例如：<br>命令名，选项，各个参数都作为命令的输入项，都是独立的项，他们之间必须用空格隔开。Linux中命令格式如下：<br>命令名 【选项】 【参数1】 【参数2】……<br>学习Linux，要熟练掌握命令的使用，虽然命令多，但是熟能生巧，在以后的学习运用中能大大节约你的时间。还有学习linux切不可粗心大意，往往一个小小的空格也会报错，当然在linux中，大小写是很敏感的，切记!</p>
+<ol start="2">
+<li>从基础入手，切勿眼高手低</li>
+</ol>
+<p>linux如果一旦学习一段时间之后你会发现其实也没想象中那么难，甚至比windows更简单已操作，通常认为GLI没有GUL那么方面用户操作。因为命令行界面的软件通常需要用户记忆操作来完成命令，但是，由于其本身的特点，命令行界面要较图形用户界面节约计算机系统的资源。所以，熟记命令的前提下，使用命令行界面往往要较使用图形用户界面的操作速度要快，这也是你以后玩转Linux的基本条件之一。</p>
+<ol start="3">
+<li>多总结，勤思考，多记笔记</li>
+</ol>
+<p>如果想学好Linux系统知识，不是一天两天就能学会的，也是经过一朝一夕，慢慢积累的，这个过程中要学会去总结，多思考，多动手去练，去实践，在理解的基础上去记忆，把原理搞懂，把重要的知识点积累下来，以便在以后的工作中方便查找，当做查询手册，同时也能锻炼我们编写文档的能力，对以后都是有很大帮助的。</p>
+<ol start="4">
+<li>及时充电，提高自学能力</li>
+</ol>
+<p>要具备良好的自学能力，除了老师讲的，你还要去考虑老师的知识点还可以怎样去扩充，这时候一本好的资料书就非常必要了，建议你再去深入学习Linux进阶技术，不断的去提高自己。</p>
+<p>以上也只是我个人学习经验所谈，希望我的学习经验可以帮助到像我原来这样的新手。学好linux基础要扎实，切不可好高骛远，踏踏实实的去练习思考。</p>
+<p>最后还是给搞一些Linux方面的资料便于学习参考</p>
+<p><a target="_blank" rel="noopener" href="http://www.makeru.com.cn/course/details/2058?s=45051%22%E6%A0%87%E9%A2%98%22">linux基础</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.makeru.com.cn/live/3485_1630.html?s=45051%22%E6%A0%87%E9%A2%98%22">Linux网络经典案例</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.makeru.com.cn/live/3485_1489.html?s=45051%22%E6%A0%87%E9%A2%98%22">shell脚本快速入门</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.makeru.com.cn/live/5413_1924.html?s=45051%22%E6%A0%87%E9%A2%98%22">单链表</a></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">OrangeYzi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://yoursite.com/2021/01/17/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">http://yoursite.com/2021/01/17/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://yoursite.com" target="_blank">OrangeYzi's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/01/26/Linux%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"><img class="prev-cover" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Linux学习路线</div></div></a></div><div class="next-post pull-right"><a href="/2020/10/21/2020-10-21/"><img class="next-cover" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">2020/10/21</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2021  <i id="heartbeat" class="fa fas fa-heartbeat"></i> OrangeYzi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OrangeYzi's Blog</title><meta name="description"><meta name="author" content="OrangeYzi"><meta name="copyright" content="OrangeYzi"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://yoursite.com/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="OrangeYzi's Blog"><meta property="og:url" content="http://yoursite.com/"><meta property="og:site_name" content="OrangeYzi's Blog"><meta property="og:description"><meta property="og:image" content="http://yoursite.com/img/avatar.png"><meta property="article:published_time" content="2021-09-10T14:47:48.881Z"><meta property="article:modified_time" content="2021-09-10T14:47:48.881Z"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime: '',
+  last_push_date: '天前',
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+      const now = new Date()
+      const expiryDay = ttl * 86400000
+      const item = {
+        value: value,
+        expiry: now.getTime() + expiryDay,
+      }
+      localStorage.setItem(key, JSON.stringify(item))
+    },
+  
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2021-09-10 22:47:48'
+}</script><noscript><style type="text/css">
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var autoChangeMode = 'false'
+var t = saveToLocal.get('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (saveToLocal.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><meta name="generator" content="Hexo 5.1.0"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">13</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">OrangeYzi's Blog</a></span><span class="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">OrangeYzi's Blog</h1><div id="site_subtitle"><span id="subtitle"></span></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/09/10/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" title="想去珠海玩">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="想去珠海玩"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/10/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" title="想去珠海玩">想去珠海玩</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-10T14:36:52.000Z" title="发表于 2021-09-10 22:36:52">2021-09-10</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/01/26/Linux%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" title="Linux学习路线">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux学习路线"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/26/Linux%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" title="Linux学习路线">Linux学习路线</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-26T13:27:47.000Z" title="发表于 2021-01-26 21:27:47">2021-01-26</time></span></div><div class="content">互联网上的各种网络服务是架构在各种各样的服务器上的。服务器(Server)是提供网络服务的物理载体，是一种计算机，只不过它是一种功能更为强大的计算机，特别是在网络应用服务方面。在服务器中安装有操作系统，就如普通PC中安装有Windows 7，Windows 8或者Windows 10一样。服务器中运行的操作系统一般常被称为服务器操作系统，或者叫网络操作系统。网络操作系统管理着互联网中各种各样的服务：DHCP,FTP,Web,E-mail,DNS,流媒体,网络游戏等，没有网络操作系统，人们就无法享受到各种网络服务。目前主流的网络操作系统有Windows和Linux两种。
+
+Linux操作系统在短短的几年之内得到了非常迅猛的发展，这与linux具有的良好特性是分不开的。Linux包含了UNIX的全部功能和特性。简单来说，linux具有以下主要特性：遵循GNU GPL，开放性，多任务，多用户，设备独立性，提供了丰富的网络功能，可靠的系统安全，良好的可移植性。
+
+掌握Linux基础
+
+俗话说“思则有备，有备无患”，学习之前你先要搭建好学习环境(红帽RHEL7)然后在虚拟机安装它，开始使用它。学 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/01/17/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Linux学习路线">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux学习路线"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/17/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Linux学习路线">Linux学习路线</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-17T09:10:28.000Z" title="发表于 2021-01-17 17:10:28">2021-01-17</time></span></div><div class="content">互联网上的各种网络服务是架构在各种各样的服务器上的。服务器(Server)是提供网络服务的物理载体，是一种计算机，只不过它是一种功能更为强大的计算机，特别是在网络应用服务方面。在服务器中安装有操作系统，就如普通PC中安装有Windows 7，Windows 8或者Windows 10一样。服务器中运行的操作系统一般常被称为服务器操作系统，或者叫网络操作系统。网络操作系统管理着互联网中各种各样的服务：DHCP,FTP,Web,E-mail,DNS,流媒体,网络游戏等，没有网络操作系统，人们就无法享受到各种网络服务。目前主流的网络操作系统有Windows和Linux两种。
+
+Linux操作系统在短短的几年之内得到了非常迅猛的发展，这与linux具有的良好特性是分不开的。Linux包含了UNIX的全部功能和特性。简单来说，linux具有以下主要特性：遵循GNU GPL，开放性，多任务，多用户，设备独立性，提供了丰富的网络功能，可靠的系统安全，良好的可移植性。
+
+掌握Linux基础
+
+俗话说“思则有备，有备无患”，学习之前你先要搭建好学习环境(红帽RHEL7)然后在虚拟机安装它，开始使用它。学 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/21/2020-10-21/" title="2020/10/21">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020/10/21"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/21/2020-10-21/" title="2020/10/21">2020/10/21</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-21T05:52:41.000Z" title="发表于 2020-10-21 13:52:41">2020-10-21</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/13/2020-10-13/" title="jsp实现页面自动跳转">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="jsp实现页面自动跳转"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/13/2020-10-13/" title="jsp实现页面自动跳转">jsp实现页面自动跳转</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-13T05:39:42.000Z" title="发表于 2020-10-13 13:39:42">2020-10-13</time></span></div><div class="content">对于网站的用户注册模块考虑如下：当用户注册成功以后，把注册信息显示给用户，然后从这个页面自动跳转到登录页面，要求在指定时间之内，并且用户可以看到倒计时的显示效果，具体控制实现的方法如下：
+5秒钟后页面将自动跳转到…
+function mskip(abc){jump.innerText = abc;if(–abc &gt; 0){setTimeout(“mskip(” + abc + “)”,1000);}}mskip(5);2.jsp实现页面自动跳转
+&lt;%response.setHeader(“Refresh”, “5;URL=upload.jsp”);%&gt;
+5秒钟后页面将自动跳转到…
+function mskip(abc){jump.innerText=abc;if(–abc &gt; 0)setTimeout(“mskip(“ + abc + “)”,1000);}mskip(5);
+3.jsp实现页面自动跳转
+注：content=1 是时间控制,表示1秒后自动跳转到要跳转的页面.content=0 表示打开该页后立即跳转到你要跳转的页面.url=index.jsp 是 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/09/21/%E6%97%B6%E9%97%B4%E7%AE%80%E5%8F%B2/" title="时间简史">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="时间简史"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/21/%E6%97%B6%E9%97%B4%E7%AE%80%E5%8F%B2/" title="时间简史">时间简史</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-21T06:04:07.000Z" title="发表于 2020-09-21 14:04:07">2020-09-21</time></span></div><div class="content">此书从微观的夸克到宏观的宇宙，从宇宙的起源到时间的终止，告诉我们世界的起源、现状和发展。这是一部科学简史，哲学简史，宇宙简史。不过，还是霍金总结得对，这是一部时间简史。读霍金，懂与不懂都是收获。
+书中的文字风趣而生动，叙述清晰而机智，读起来非常有趣，正如霍金自己所说：这本物理著作比麦当娜谈性的书还更好卖。霍金喜欢拿科学命题与朋友打赌，他设过几个闻名于科学界的赌局，赌注是输家给赢家订四年的色情杂志《藏春阁》。有趣的是霍金会故意输给他朋友，让邮差把《藏春阁》送至朋友府上，惹得朋友的妻子大为恼火。爱因斯坦在反对量子力学的不确定性原理时用了一句名言“上帝从不掷骰子”，而霍金却形容上帝是个赌徒，上帝不但掷骰子，而且是非常随意地掷骰子。书中对“黑洞无毛”，“裸奇点”，“虫洞”等等物理概念做了非常形象的比喻。如果你不知道霍金的生平，你绝对想不到一个能写出这样风趣生动文字的人，一个有点“色”，有点“坏”的人竟然从21岁起就患卢伽雷氏症，失去了运动能力，语言能力，身体严重畸变，被禁锢在轮椅上达50多年。我不愿用什么身残志坚这样苍白的话来形容他，我为他以坚强意志追求终极真理的伟大灵魂而由衷敬佩，他拥有健康 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/09/20/%E7%BB%84%E7%BD%91%E5%B7%A5%E7%A8%8B/" title="组网工程">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="组网工程"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/20/%E7%BB%84%E7%BD%91%E5%B7%A5%E7%A8%8B/" title="组网工程">组网工程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-20T15:55:53.000Z" title="发表于 2020-09-20 23:55:53">2020-09-20</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/09/13/%E6%9C%88%E4%BA%AE%E4%B8%8E%E5%85%AD%E4%BE%BF%E5%A3%AB/" title="月亮与六便士">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="月亮与六便士"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/13/%E6%9C%88%E4%BA%AE%E4%B8%8E%E5%85%AD%E4%BE%BF%E5%A3%AB/" title="月亮与六便士">月亮与六便士</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-13T07:39:13.000Z" title="发表于 2020-09-13 15:39:13">2020-09-13</time></span></div><div class="content">满地都是六便士，他却抬头看见了月亮  在《月亮和六便士》之前，我以为大师就是伟人，而伟人除了拥有惊世的成就以外，还拥有完美的道德品行，他一定很谦逊，很无私，很有爱心，很有责任感，人性的每一面，他都是众人效仿的典范。
+就像课本和报纸上写的。
+要是哪个大师不小心离了婚，那你一定会嗤之以鼻，因为他竟然犯了常人犯的错，实在太不应该了！
+当然了，从此他就跟大师两个字绝缘了，因为有瑕疵了嘛。
+但《月亮和六便士》里的主人公，那个天才画家简直离经叛道泯灭人性，他40岁抛家弃子，毫无廉耻之心地霸占了朋友的妻子和画室，而这个朋友一直收留他接济他。
+他也根本不爱那个可怜的女人，因此厌倦了之后就果断地离开，哪怕这个女人苦苦哀求都毫不动心，甚至连她最后因此自杀，都没有让他感到一点悔意。
+他就像一个恶棍，毫无道德可言，人性中没有一丝丝光明，但是天呐，他又是那么了不起的一个天才画家，百年一遇的绘画奇才。
+他从前生活在诺大的庄园里，太太隔三五差就要举办盛宴，点头之交都是富商巨贾，现在却过着乞丐的生活，头上无片瓦，手中无热饭，但他一点不觉得苦，他拿着画笔，笔下就是他的世界。
+他拿着画笔，笔下就是他的世界，他一无所有，但 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/09/08/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" title="linux常用命令大全">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="linux常用命令大全"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/08/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" title="linux常用命令大全">linux常用命令大全</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-08T13:55:23.000Z" title="发表于 2020-09-08 21:55:23">2020-09-08</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/09/05/2020-09-05/" title="2020/09/05">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020/09/05"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/05/2020-09-05/" title="2020/09/05">2020/09/05</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-05T13:55:41.000Z" title="发表于 2020-09-05 21:55:41">2020-09-05</time></span></div><div class="content">乌合之众法国社会心理学家古斯塔夫•勒庞的著作《乌合之众》是研究群体心理的开山之作，细致解读了大众心态，让读者得以对群体心理有进一步的认识，是值得多次阅读、思考的作品。
+书中对群体及群体心理的特征进行了探讨，如群体的冲动、易变和急躁，群体的易受暗示和轻信等。由于群体所屈服的冲动因素是多种多样的，群体也就极为多变。书中为说明其冲动、急躁的特点举出了普法战争的例子，由此也可联想到众多革命事件，群体的力量可想而知。
+书中写到集体中暗示的传染性会瞬间形成这个群体感情的一致倾向，因此群体便在毫无目的的状态下听从于所有外界的暗示，缺乏自己的主见与判断、没有批判精神。这样想来，历史上不论成功与否的农民起义、群众游行等革命群体的行为，也不一定是事先就有高瞻远瞩的计划的，也许他们是更倾向于本能的行为。按照作者的话来说，正因这些特征，群体容易成为愿意为别人浴血奋战的人。冲动与激愤状态也许会使社会发生巨大的变革，正如作者认为，群体是一股不可阻挡的力量因而是世界潮流的引领者。总之，在作者的观点里，群体与野蛮人无异，而同时他也认为群体的力量与作用在社会中举足轻重。
+作者在他那个时代所预言的：“我们即将进入的时代， ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">OrangeYzi</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">13</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="sticky_layout"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/09/10/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" title="想去珠海玩"><img data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="想去珠海玩"/></a><div class="content"><a class="title" href="/2021/09/10/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" title="想去珠海玩">想去珠海玩</a><time datetime="2021-09-10T14:36:52.000Z" title="发表于 2021-09-10 22:36:52">2021-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/26/Linux%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" title="Linux学习路线"><img data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux学习路线"/></a><div class="content"><a class="title" href="/2021/01/26/Linux%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" title="Linux学习路线">Linux学习路线</a><time datetime="2021-01-26T13:27:47.000Z" title="发表于 2021-01-26 21:27:47">2021-01-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/17/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Linux学习路线"><img data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux学习路线"/></a><div class="content"><a class="title" href="/2021/01/17/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Linux学习路线">Linux学习路线</a><time datetime="2021-01-17T09:10:28.000Z" title="发表于 2021-01-17 17:10:28">2021-01-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/21/2020-10-21/" title="2020/10/21"><img data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020/10/21"/></a><div class="content"><a class="title" href="/2020/10/21/2020-10-21/" title="2020/10/21">2020/10/21</a><time datetime="2020-10-21T05:52:41.000Z" title="发表于 2020-10-21 13:52:41">2020-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/13/2020-10-13/" title="jsp实现页面自动跳转"><img data-lazy-src="https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="jsp实现页面自动跳转"/></a><div class="content"><a class="title" href="/2020/10/13/2020-10-13/" title="jsp实现页面自动跳转">jsp实现页面自动跳转</a><time datetime="2020-10-13T05:39:42.000Z" title="发表于 2020-10-13 13:39:42">2020-10-13</time></div></div></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">3</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">13</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="webinfo-last-push-date-name">最后更新时间 :</div><div class="webinfo-last-push-date" last-push-date="2021-09-10"></div></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2021  <i id="heartbeat" class="fa fas fa-heartbeat"></i> OrangeYzi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
