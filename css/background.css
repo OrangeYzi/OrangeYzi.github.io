@@ -1,8 +1,0 @@
-#web_bg {
-  /* 背景图像的地址（url括号里）  */
-  background: url(https://cdn.jsdelivr.net/gh/blogimg/picbed@master/2020/04/11/e7ed08fbe6852480074466ed6637b1a7.png);
-  /* 背景图像不重复 */
-  background-repeat: no-repeat;
-  /* 背景图像大小 */
-  background-size: cover;
-}
